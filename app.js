@@ -56,7 +56,7 @@ app.post("/register",(req,res)=>{
 
     newUser.save()
         .then(() => {
-            console.log('Document saved successfully:', newUser);
+         //   console.log('Document saved successfully:', newUser);
             res.render("secrets");
           })
           .catch((error) => {
