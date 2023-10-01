@@ -48,6 +48,11 @@ app.get("/submit",(req,res)=>{
     res.render("submit");
 });
 
+app.get("/logout", function(req, res) {
+  res.render("login");
+});
+
+
 app.post("/register",(req,res)=>{
     const newUser = new User({
         email : req.body.username,
